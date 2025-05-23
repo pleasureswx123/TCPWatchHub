@@ -1,8 +1,18 @@
 {
+  "name": "tcp-mqtt-server",
+  "version": "1.0.0",
+  "description": "TCP and MQTT Server",
+  "main": "tcp-server.js",
+  "scripts": {
+    "start": "node tcp-server.js",
+    "start:mqtt": "node mqtt/mqtt-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
+    "aedes": "^0.50.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "net": "^1.0.2",
+    "mqtt": "^5.3.5",
     "node-fetch": "^3.3.2"
   }
 }
